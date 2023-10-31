@@ -13,39 +13,33 @@ public class InicializarJogoDePerguntas {
         ArrayList <Integer> numeros = new ArrayList<>();
         ArrayList <String> alternativasCorretas = new ArrayList<>();
         
-        for (int i = 0; i < 4; i++){ // preenchendo o arrayList com 10 numeros
+        for (int i = 0; i < 3; i++){ // preenchendo o arrayList com 10 numeros
             numeros.add(i);
         }
        
        Collections.shuffle(numeros); // embaralha os numeros dentro do arrayList onde vai mudar a posicao em que estava
        
-       perguntas.add("O que é encapsulamento em Java?\na) Um método que não pode ser acessado fora da classe.\n" + 
+       perguntas.add("A -O que é encapsulamento em Java?\na) Um método que não pode ser acessado fora da classe.\n" + 
                  "b) O processo de ocultar detalhes internos de uma classe e fornecer uma interface pública.\n"+ 
                  "c) Um tipo de loop em Java.\n" + 
                  "b) d) Uma classe abstrata em Java.\n");
        alternativasCorretas.add("A");
 
-       perguntas.add("Qual é a diferença entre uma classe e um objeto?\na)  Uma classe é um tipo de referência, enquanto um objeto é um tipo primitivo.\n" + 
+       perguntas.add("D - Qual é a diferença entre uma classe e um objeto?\na)  Uma classe é um tipo de referência, enquanto um objeto é um tipo primitivo.\n" + 
                  "b) Uma classe é um conjunto de atributos e métodos, enquanto um objeto é um conjunto de valores.\n"+ 
                  "c) Uma classe é um tipo de dados, enquanto um objeto é um valor.\n" + 
                  "d)Uma classe é uma abstração de um conceito do mundo real, enquanto um objeto é uma instância de uma classe.\n");
 
        alternativasCorretas.add("D");
        
-       perguntas.add("Qual é a diferença entre uma classe e um objeto?\na)  Uma classe é um tipo de referência, enquanto um objeto é um tipo primitivo.\n" + 
-                 "b) Uma classe é um conjunto de atributos e métodos, enquanto um objeto é um conjunto de valores.\n"+ 
-                 "c) Uma classe é um tipo de dados, enquanto um objeto é um valor.\n" + 
-                 "d)Uma classe é uma abstração de um conceito do mundo real, enquanto um objeto é uma instância de uma classe.\n");
+       perguntas.add("A -Qual é o objetivo de um construtor?\na)Inicializar os atributos de um objeto.\n" + 
+                 "b)Criar um novo objeto.\n"+ 
+                 "c)Destruir um objeto.\n" + 
+                 "d)Modificar os atributos de um objeto.\n");
 
-       alternativasCorretas.add("C");
+       alternativasCorretas.add("A");
        
-       perguntas.add("Qual é a diferença entre uma classe e um objeto?\na)  Uma classe é um tipo de referência, enquanto um objeto é um tipo primitivo.\n" + 
-                 "b) Uma classe é um conjunto de atributos e métodos, enquanto um objeto é um conjunto de valores.\n"+ 
-                 "c) Uma classe é um tipo de dados, enquanto um objeto é um valor.\n" + 
-                 "d)Uma classe é uma abstração de um conceito do mundo real, enquanto um objeto é uma instância de uma classe.\n");
-
-       alternativasCorretas.add("B");
-
+       
        boolean erro = false; // usado para verificar no while 
        String opcao = null; // vai ser usada para receber a opcao do usuario
        int i = 0; // contador para verificar a quantidade de perguntas e usar no loop para encerra-lo
@@ -62,10 +56,11 @@ public class InicializarJogoDePerguntas {
          jogador.setPontuacao(jogador.getPontuacao() + 10);
        
         i++;
-       }else if (erros == 2){
-        erro = true;
        }else {   // se errar
         erros++;
+        i++;
+       }if (erros == 2){
+        erro = true;
        }
        }else{
         erro = true;

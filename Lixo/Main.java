@@ -1,3 +1,6 @@
+/* import Jogador;
+
+package Lixo;
 public class Main {
     public static void main(String[] args) {
         P[] perguntas = new P[2];
@@ -25,3 +28,4 @@ public class Main {
 
     }
 }
+ */

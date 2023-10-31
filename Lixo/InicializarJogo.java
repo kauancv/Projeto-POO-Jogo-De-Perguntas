@@ -1,6 +1,9 @@
+/* package Lixo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+
+import Jogador;
 
 
 public class InicializarJogo {
@@ -36,9 +39,9 @@ public class InicializarJogo {
 
        alternativasCorretas.add("D");
        
-       /* for (int i = 0; i < perguntas.size();i++){
+       for (int i = 0; i < perguntas.size();i++){
          System.out.println(perguntas.get(numeros.get(i)));
-       } */
+       } 
       
         boolean erro = false;
         String opcao = null;
@@ -83,13 +86,13 @@ public class InicializarJogo {
       
       
       
-       /* String opcao = "A";
+        String opcao = "A";
 
        if (opcao.equalsIgnoreCase(alternativasCorretas.get(0))){
         System.out.println("Voce Acertou");
        }
- */
+ 
 
     }
      
-}
+} */
