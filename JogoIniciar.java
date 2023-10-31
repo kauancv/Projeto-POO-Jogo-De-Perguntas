@@ -47,7 +47,50 @@ public class JogoIniciar {
                 
  
        alternativasCorretas.add("C");
+       
+       perguntas.add("A - O que é uma classe?\na)Um conjunto de atributos\n" + 
+                 "b)Um tipo de dados\n"+ 
+                 "c)Um conjunto de métodos\n" + 
+                 "d)Um objeto\n");
+             
+                 
+ 
+       alternativasCorretas.add("A");
+       
+       perguntas.add("D - O que é um método estático?\na)Um método que pode ser chamado sem a necessidade de uma instância de classe\n" + 
+                 "b)Um método que pode ser chamado apenas a partir de uma instância de classe\n"+ 
+                 "c)Um método que pode acessar apenas atributos estáticos\n" + 
+                 "d)Um método que pode ser acessado por qualquer classe\n");
+                 
+ 
+       alternativasCorretas.add("D");
+       
+       
+       perguntas.add(" A -O que é um método virtual?\na)Um método que pode ser substituído por uma subclasse\n" + 
+                 "b)Um método que é chamado dinamicamente\n"+ 
+                 "c)Um método que pode ser chamado a partir de uma classe abstrata\n" + 
+                 "d)Um método que pode ser chamado a partir de um objeto\n");
 
+               
+ 
+       alternativasCorretas.add("A");
+        
+       perguntas.add("B - Qual é o tipo de relacionamento entre uma classe e sua subclasse?\na)Associação\n" + 
+                 "b)Herança\n"+ 
+                 "c)Agregação\n" + 
+                 "d)Composição\n");
+                
+ 
+       alternativasCorretas.add("B");
+       
+       perguntas.add("D - Qual é a diferença entre herança e composição\na)Herança é uma relação unidirecional, enquanto composição é uma relação bidirecional.\n" + 
+                 "b)Herança é uma relação entre classes, enquanto composição é uma relação entre objetos.\n"+ 
+                 "c)Herança permite que uma classe herde atributos e métodos de outra classe, enquanto composição permite que uma classe use objetos de outra classe como seus atributos.\n" + 
+                 "d)Todas as respostas estão corretas.\n");
+                
+ 
+       alternativasCorretas.add("D");
+        
        for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com 10 numeros
         numeros.add(i);
     }
