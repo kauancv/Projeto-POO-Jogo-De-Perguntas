@@ -91,7 +91,7 @@ public class JogoIniciar {
  
        alternativasCorretas.add("D");
         
-       for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com 10 numeros
+       for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com numeros que sao a quantidade de perguntas
         numeros.add(i);
     }
    
@@ -103,19 +103,36 @@ public class JogoIniciar {
       String opcao = null;
       int i = 0;
       int quantidadeErros = 0;
+      
+      
+      
+      System.out.println("\033[0;3m");
+     
+       System.out.printf("\t\t\t-------Jogo de Perguntas-------\n");
+         System.out.printf("\t\t\t-------Regras do Jogo-------\n");
+         System.out.printf("Resposta Correta - ganha 20 Pontos\n");
+         System.out.printf("Resposta Errada - perde 10 Pontos\n");
+         System.out.printf("2 chances de Erro\n\n");
 
-      while (erro == false && i < perguntas.size()){
+         System.out.printf("Informe o Nome do Jogador:");
+          jogador.setNome(scan.nextLine());
+
+         System.out.printf("\nBem Vindo %s ao Jogo\n\n",jogador.getNome()); 
+
         
-        System.out.println(perguntas.get(numeros.get(i)));
-        System.out.printf("Informe sua opcao:");
-          opcao = scan.nextLine();
+      while (erro == false && i < perguntas.size()){
+          System.out.printf("Pergunta %d\n", i + 1);
+       System.out.println(perguntas.get(numeros.get(i)));
+        System.out.printf("Opcao:");
+          opcao = scan.nextLine(); 
 
         if (opcao.equalsIgnoreCase(alternativasCorretas.get(numeros.get(i)))){
-            System.out.printf("\nAcertou Monki\n");
-             jogador.setPontuacao(jogador.getPontuacao() + 10);
+            System.out.printf("\nResposta Correta\nMais 10 pontos\n\n");
+             jogador.setPontuacao(jogador.getPontuacao() + 20);
              i++;
         }else {
-            System.out.println("Errou Burrinho!!!");
+            jogador.setPontuacao(jogador.getPontuacao() - 10);
+            System.out.printf("\nResposta Errada\nMenos 10 pontos\n\n");
             quantidadeErros ++;
             i++;
         }

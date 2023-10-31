@@ -1,11 +1,10 @@
 public class Jogador {
     private int pontuacao;
     private String nome;
-   
-    public Jogador(int pontuacao, String nome) {
-        this.pontuacao = pontuacao;
-        this.nome = nome;
+    
+    public Jogador() {
     }
+    
     public Jogador(String nome) {
         this.pontuacao = 0;
         this.nome = nome;
