@@ -22,5 +22,10 @@ public class Main {
         }
 
         System.out.println(j1.getPontuacao());
+
+        System.out.println("Kauan LIndo");
+        System.out.println("Kauan LIndo");
+        System.out.println("Kauan LIndo");
+        System.out.println("Kauan LIndo");
     }
 }
