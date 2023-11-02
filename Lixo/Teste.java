@@ -38,8 +38,8 @@ public class Teste {
                  "d)Modificar os atributos de um objeto.\n");
 
        alternativasCorretas.add("B");
-
-        
+      
+               
        for (int i = 0; i < 3; i++){
       //  System.out.println(perguntas.get(numeros.get(i)));
         System.out.printf(alternativasCorretas.get(numeros.get(i)));

@@ -4,14 +4,18 @@ import java.util.Scanner;
 
 public class JogoIniciar {
     public void inicializarJogo(Jogador jogador){
-      
+       
+       String reset = "\u001B[0m";
+       String red = "\u001B[31m";
+       String green = "\u001B[32m";
+       
         Scanner scan = new Scanner(System.in);
-
-        ArrayList <String> perguntas = new ArrayList<>(); 
+ 
+        ArrayList <String> perguntas = new ArrayList<>();
         ArrayList <Integer> numeros = new ArrayList<>();
         ArrayList <String> alternativasCorretas = new ArrayList<>();
         
-        perguntas.add("B -O que é encapsulamento em Java?\na) Um método que não pode ser acessado fora da classe.\n" + 
+        perguntas.add("B - O que é encapsulamento em Java?\na) Um método que não pode ser acessado fora da classe.\n" + 
                  "b) O processo de ocultar detalhes internos de uma classe e fornecer uma interface pública.\n"+ 
                  "c) Um tipo de loop em Java.\n" + 
                  "b) d) Uma classe abstrata em Java.\n");
@@ -93,7 +97,7 @@ public class JogoIniciar {
         
        for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com numeros que sao a quantidade de perguntas
         numeros.add(i);
-    }
+       }
    
       Collections.shuffle(numeros); // embaralha os numeros dentro do arrayList onde vai mudar a posicao em que estava
    
@@ -127,12 +131,12 @@ public class JogoIniciar {
           opcao = scan.nextLine(); 
 
         if (opcao.equalsIgnoreCase(alternativasCorretas.get(numeros.get(i)))){
-            System.out.printf("\nResposta Correta\nMais 10 pontos\n\n");
+            System.out.println(green + "\nResposta Correta\nMais 20 pontos\n\n" + reset);
              jogador.setPontuacao(jogador.getPontuacao() + 20);
              i++;
         }else {
             jogador.setPontuacao(jogador.getPontuacao() - 10);
-            System.out.printf("\nResposta Errada\nMenos 10 pontos\n\n");
+            System.out.println(red + "\nResposta Errada\nMenos 10 pontos\n\n" + reset);
             quantidadeErros ++;
             i++;
         }
