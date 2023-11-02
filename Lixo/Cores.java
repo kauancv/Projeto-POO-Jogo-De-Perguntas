@@ -1,3 +1,4 @@
+
 public class Cores {
     public static void main(String[] args) {
         // Códigos de escape ANSI para definir a cor da fonte

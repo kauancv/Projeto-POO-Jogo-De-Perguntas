@@ -1,4 +1,4 @@
-package Lixo;
+
 public class P {
     private String pergunta;
     private String alternativas;
