@@ -1,3 +1,4 @@
+import Versao2.Jogador;
 
 public class MainTeste {
     public static void main(String[] args) {

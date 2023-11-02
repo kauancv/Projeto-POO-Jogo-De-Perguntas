@@ -1,3 +1,4 @@
+package Versao2;
 public class Jogador {
     private int pontuacao;
     private String nome;

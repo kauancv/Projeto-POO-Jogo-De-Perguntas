@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import Versao2.Jogador;
+
 
 public class InicializarJogoDePerguntas {
     
