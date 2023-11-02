@@ -4,9 +4,8 @@ package Versao1;
 import java.util.Scanner;
 
 public class Jogo {
- BancoDePerguntas perguntas = new BancoDePerguntas();
- Indice indices = new Indice();
- BancoDePerguntas alternativa = new BancoDePerguntas();
+ private BancoDePerguntas perguntas = new BancoDePerguntas();
+ private Indice indices = new Indice();
  
  String reset = "\u001B[0m";
  String red = "\u001B[31m";
@@ -54,12 +53,17 @@ public class Jogo {
       }
       if (quantidadeErros == 2){
           erro = true;
+          
       }
 
 
     }
-
+        mostrarPontuacao(jogador);
         scan.close();
+     }
+
+     public void mostrarPontuacao (Jogador jogador){
+      System.out.println("O jogador fez " + jogador.getPontuacao() + " pontos!!!");
      }
     
 }
