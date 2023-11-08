@@ -96,11 +96,11 @@ public class JogoIniciar {
  
        alternativasCorretas.add("D");
         
-       for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com numeros que sao a quantidade de perguntas
+       for (int i = 0; i < perguntas.size(); i++){ 
         numeros.add(i);
        }
    
-      Collections.shuffle(numeros); // embaralha os numeros dentro do arrayList onde vai mudar a posicao em que estava
+      Collections.shuffle(numeros); 
    
       System.out.println(numeros);
 

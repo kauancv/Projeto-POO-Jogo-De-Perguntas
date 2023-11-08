@@ -38,18 +38,18 @@ public class InicializarJogoDePerguntas {
 
        alternativasCorretas.add("B");
        
-        for (int i = 0; i < perguntas.size(); i++){ // preenchendo o arrayList com 10 numeros
+        for (int i = 0; i < perguntas.size(); i++){
             numeros.add(i);
         }
        
-       Collections.shuffle(numeros); // embaralha os numeros dentro do arrayList onde vai mudar a posicao em que estava
+       Collections.shuffle(numeros);
        
        System.out.println(numeros);
 
-       boolean erro = false; // usado para verificar no while 
-       String opcao = null; // vai ser usada para receber a opcao do usuario
-       int i = 0; // contador para verificar a quantidade de perguntas e usar no loop para encerra-lo
-       int erros = 0; //contagem de erros
+       boolean erro = false; 
+       String opcao = null; 
+       int i = 0; 
+       int erros = 0; 
         
 
        while (erro == false && i < perguntas.size()){
