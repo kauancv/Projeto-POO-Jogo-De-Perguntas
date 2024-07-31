@@ -61,10 +61,6 @@ O projeto é composto pelos seguintes pacotes e classes:
 3. Para cada resposta errada, o jogador perde 10 pontos.
 4. O jogador tem direito a 2 erros. Ao atingir 2 erros, o jogo termina.
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
-
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
