@@ -1,4 +1,4 @@
-# Banco de Perguntas - Versão 1
+# Jogo de Perguntas - Versão 1
 
 Este projeto foi desenvolvido como trabalho final para a disciplina de Programação Orientada a Objetos (POO). O objetivo principal é demonstrar o entendimento e aplicação dos conceitos de POO através de um jogo de perguntas e respostas.
 
